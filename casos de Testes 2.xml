@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10001</projectId>
+    <projectKey>LDJM</projectKey>
+    <exportDate>2022-12-11 03:01:39 UTC</exportDate>
+    <folders/>
+    <testCases>
+        <testCase id="76741019" key="LDJM-T1" paramType="PARAMETER">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Jessica Machado</createdBy>
+            <createdOn>2022-12-10 21:29:53 UTC</createdOn>
+            <customFields/>
+            <issues>
+                <issue>
+                    <key>LDJM-3</key>
+                    <summary><![CDATA[Criar conta na loja virtual]]></summary>
+                </issue>
+            </issues>
+            <labels>
+                <label><![CDATA[SPRINT]]></label>
+            </labels>
+            <name><![CDATA[Usuário sem cadastro que deseja acessar loja virtual]]></name>
+            <objective><![CDATA[verificar funcionalidade de login&nbsp;]]></objective>
+            <owner>61b9dda8f19b53006a962206</owner>
+            <priority><![CDATA[High]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Cliente acessa o site da loja virtual &nbsp;]]></description>
+                        <expectedResult><![CDATA[usu&aacute;rio deve visualizar a tela de login ]]></expectedResult>
+                        <testData><![CDATA[(https://www.saucedemo.com/inventory.html]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[<ol><li>cliente nao possui cadastro e clica no link de criacao de conta</li></ol>]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio deve visualizar o formul&aacute;rio de cria&ccedil;&atilde;o de conta]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Cliente preenche suas informa&ccedil;&otilde;es pessoais, e-mail e senha]]></description>
+                        <expectedResult><![CDATA[Cliente cria seu login e senha e tem acesso a loja virtual]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="76741138" key="LDJM-T9">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Jessica Machado</createdBy>
+            <createdOn>2022-12-10 23:46:35 UTC</createdOn>
+            <customFields/>
+            <issues>
+                <issue>
+                    <key>LDJM-3</key>
+                    <summary><![CDATA[Criar conta na loja virtual]]></summary>
+                </issue>
+                <issue>
+                    <key>LDJM-5</key>
+                    <summary><![CDATA[Criar novo usuario ]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Usuário sem cadastro que deseja realizar cadastro]]></name>
+            <objective><![CDATA[Realizar cadastro de novo usuario&nbsp;]]></objective>
+            <owner>61b9dda8f19b53006a962206</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given I que eu tenha interesse em fazer compras na loja virtual
+And I acesse o "link de criacao" de conta
+When I acessar o "link" e preencher o formulário de novo usuário
+And I criar meu login e senha 
+Then I Terei meu "login e senha" de acesso ; 
+And I posso fazer "compras na loja" virtual .  .]]></details>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>

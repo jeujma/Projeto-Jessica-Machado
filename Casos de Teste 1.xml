@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10001</projectId>
+    <projectKey>LDJM</projectKey>
+    <exportDate>2022-12-11 02:59:37 UTC</exportDate>
+    <folders/>
+    <testCases>
+        <testCase id="76741131" key="LDJM-T8">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Jessica Machado</createdBy>
+            <createdOn>2022-12-10 23:35:15 UTC</createdOn>
+            <customFields/>
+            <issues>
+                <issue>
+                    <key>LDJM-1</key>
+                    <summary><![CDATA[Redefinição de usuário e senha da loja virtual]]></summary>
+                </issue>
+            </issues>
+            <labels>
+                <label><![CDATA[SPRINT]]></label>
+                <label><![CDATA[redefinicao]]></label>
+            </labels>
+            <name><![CDATA[Redefinindo a senha do usuário]]></name>
+            <objective><![CDATA[Testar a funcionalidade de redefini&ccedil;&atilde;o de usu&aacute;rio]]></objective>
+            <owner>61b9dda8f19b53006a962206</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given I que eu tenha cadastro e esqueça a senha  
+And I acesse o "link de redefinição" de senha 
+When I acessar o "link" recebido por e-mail 
+And I Redefina a senha de cadastro
+Then I A minha "senha de acesso" será alterada"; 
+And I devo receber "um e-mail confirmando" a alteração".]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="76741147" key="LDJM-T10">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Jessica Machado</createdBy>
+            <createdOn>2022-12-11 00:03:47 UTC</createdOn>
+            <customFields/>
+            <issues>
+                <issue>
+                    <key>LDJM-1</key>
+                    <summary><![CDATA[Redefinição de usuário e senha da loja virtual]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Redefinindo a senha do usuário]]></name>
+            <objective><![CDATA[Redefinir a senha do usu&aacute;rio&nbsp;]]></objective>
+            <owner>61b9dda8f19b53006a962206</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Cliente esquece a senha de acesso e clica no link para redefinir senha&nbsp;]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio recebe o link de altera&ccedil;&atilde;o de senha por e-mail]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio altera a senha atrav&eacute;s do link]]></description>
+                        <expectedResult><![CDATA[A altera&ccedil;&atilde;o &eacute; realizada e o cliente possui nova senha de acesso. <br /><br />]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
